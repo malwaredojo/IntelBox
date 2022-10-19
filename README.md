@@ -8,7 +8,7 @@
 
 
 <h3 align="center">
-<b>Install an arsenal of OSINT tools by running this script on any Debian or Debian Based Distribution</b>
+<b>Install an arsenal of OSINT tools by running IntelBox on any Debian or Debian Based Distribution</b>
 </h3>
 
 
