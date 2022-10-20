@@ -182,7 +182,43 @@ def sherlock():
     os.chdir('sherlock')
     os.system('sudo python3 -m pip install -r requirements.txt')
     os.chdir('../')
-    print(termcolor.colored('[+] installing Sherlock ', 'green', attrs=['bold']))
+    print(termcolor.colored('[+] Installed Sherlock ', 'green', attrs=['bold']))
+    ccrawldns()
+#-------------------------------------------------------------------------------------------------------------------------
+
+def ccrawldns():
+    print(termcolor.colored('\n[+] Installing CCrawlDNS','green', attrs=['bold']))
+    os.system('git clone https://github.com/lgandx/CCrawlDNS.git')
+    os.chdir('CCrawlDNS')
+    os.system('sudo pip3 install requests')
+    os.chdir('../')
+    print(termcolor.colored('[+] Installed CCrawlDNS','green',attrs=['bold']))
+    certgraph()
+
+def certgraph():
+    print(termcolor.colored('\n[+] Installing Certgraph','green', attrs=['bold']))
+    os.mkdir('Certgraph')
+    os.chdir('Certgraph')
+    os.system('sudo apt install golang')
+    os.system('wget https://github.com/lanrat/certgraph/releases/download/20220513/certgraph-linux-386-20220513.zip')
+    os.system('unzip certgraph-linux-386-20220513.zip')
+    os.chdir('../')
+    print(termcolor.colored('[+] Installed Certgraph','green',attrs=['bold']))
+    cloud_buster()
+
+def cloud_buster():
+    print(termcolor.colored('\n[+] Installing Cloud Buster', 'green', attrs=['bold']))
+    os.system('sudo pip3 install dnspython3 bs4 && git clone https://github.com/SageHack/cloud-buster.git')
+    print(termcolor.colored('[+] Installed Cloud Buster','green',attrs=['bold']))
+    cloudfail()
+
+def cloudfail():
+    print(termcolor.colored('\n[+] Installing Cloudfail','green', attrs=['bold']))
+    os.system('git clone https://github.com/m0rtem/CloudFail.git')
+    os.chdir('Cloudfail')
+    os.system('sudo pip3 install -r requirements.txt')
+    os.chdir('../')
+    print(termcolor.colored('[+] Installed Cloudfail', 'green', attrs=['bold']))
     sys.exit(0)
 
 
@@ -190,11 +226,12 @@ def sherlock():
 def mkdir():
     
     if os.path.exists('/opt/osint-tools'):
-        print("\n[" + termcolor.colored("!",'red',attrs=['bold']) + "] Directory Already Exists\n")
+        print("\n\n[" + termcolor.colored("!",'red',attrs=['bold']) + "] Directory Already Exists\n")
         print("[" + termcolor.colored("!",'green',attrs=['bold']) + "] Delete The Existing Directory and then run the script\n")
         sys.exit(0)
 
     else:
+        print(termcolor.colored('==> Installing the tools', 'green', attrs=['bold']))
         os.chdir("/opt/")
         os.system('mkdir osint-tools')
         os.chdir('osint-tools')
@@ -227,6 +264,7 @@ if __name__ == '__main__':
     if os.geteuid()==0:
         try:
             print_banner()
+            print(termcolor.colored('\n[+] All tools are installed in /opt/osint-tools directory ', 'yellow', 'on_grey', attrs=['bold']))
             mkdir()
         except KeyboardInterrupt:
             print("[" + termcolor.colored("!",'red',attrs=['bold']) + "] Keyboard Interrupt detected.....Exiting")
