@@ -17,6 +17,8 @@
 <b><a href="https://github.com/malwaredojo/IntelBox#tools">List of Tools</a></b>
 <b>&ensp;•&ensp;</b>
 <b><a href="https://github.com/malwaredojo/IntelBox#contributions--license">Contributions</a></b>
+<b>&ensp;•&ensp;</b>
+<b><a href="https://github.com/malwaredojo/IntelBox#future-goals">Future Goals</a></b>
 </p>
 
 
@@ -60,6 +62,13 @@ $ sudo python3 intelbox.py
 - Photon
 - Sublist3r
 - Sherlock
+
+# Future Goals
+This is the list of all the future goals of this project.
+- To make it Distribution Independent
+- To have files to be placed in the **/bin/** directory for the user to call all the tools from anywhere
+- To add more tools of OSINT and segregate them in directories based on their category
+
 
 # Contributions & License
 
