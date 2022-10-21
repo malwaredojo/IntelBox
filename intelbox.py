@@ -218,12 +218,13 @@ def cloudfail():
     os.system('sudo pip3 install -r requirements.txt')
     os.chdir('../')
     print(termcolor.colored('[+] Installed Cloudfail', 'green', attrs=['bold']))
-    sys.exit(0)
-
+    cloudmare()
+    
 def cloudmare():
     print(termcolor.colored('\n[+] Installing Cloudmare','green', attrs=['bold']))
     os.system('git clone https://github.com/mrh0wl/Cloudmare.git')
     print(termcolor.colored('[+] Installed Cloudmare', 'green', attrs=['bold']))
+    sys.exit(0)
 
 # Make the Directory in /opt/ folder 
 def mkdir():
