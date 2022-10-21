@@ -63,6 +63,8 @@ $ sudo python3 intelbox.py
 - Sublist3r
 - Sherlock
 
+And Many More
+
 # Future Goals
 This is the list of all the future goals of this project.
 - To make it Distribution Independent
