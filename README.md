@@ -11,6 +11,14 @@
 <b>Install an arsenal of OSINT tools by running IntelBox on any Debian or Debian Based Distribution</b>
 </h3>
 
+<p align="center">
+<b><a href="https://github.com/malwaredojo/IntelBox#installation--usage">Installation</a></b>
+<b>&ensp;•&ensp;</b>
+<b><a href="https://github.com/malwaredojo/IntelBox#tools">List of Tools</a></b>
+<b>&ensp;•&ensp;</b>
+<b><a href="https://github.com/malwaredojo/IntelBox#contributions--license">Contributions</a></b>
+</p>
+
 
 
 # Screenshot
