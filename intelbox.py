@@ -184,7 +184,6 @@ def sherlock():
     os.chdir('../')
     print(termcolor.colored('[+] Installed Sherlock ', 'green', attrs=['bold']))
     ccrawldns()
-#-------------------------------------------------------------------------------------------------------------------------
 
 def ccrawldns():
     print(termcolor.colored('\n[+] Installing CCrawlDNS','green', attrs=['bold']))
@@ -221,6 +220,10 @@ def cloudfail():
     print(termcolor.colored('[+] Installed Cloudfail', 'green', attrs=['bold']))
     sys.exit(0)
 
+def cloudmare():
+    print(termcolor.colored('\n[+] Installing Cloudmare','green', attrs=['bold']))
+    os.system('git clone https://github.com/mrh0wl/Cloudmare.git')
+    print(termcolor.colored('[+] Installed Cloudmare', 'green', attrs=['bold']))
 
 # Make the Directory in /opt/ folder 
 def mkdir():
